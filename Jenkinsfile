@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'building the application... completed'
-                echo 'Hello World!'
+                python3 test.py
             }
         }
         stage('test') {
