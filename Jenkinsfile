@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'building the application... completed'
+                script {
+                    // Docker 이미지 빌드
+                    docker.build("ubuntu-python:v1.0")
+                }
             }
         }
         stage('test') {
