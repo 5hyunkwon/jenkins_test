@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get -y install python3 awscli
 
