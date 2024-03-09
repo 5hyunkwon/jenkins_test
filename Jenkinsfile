@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     // Docker 이미지 빌드
-                    docker.build("ubuntu-python:v1.0").inside('--privileged')
+                    docker.build("ubuntu-python:v1.0")
                 }
             }
         }
